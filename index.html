@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Selector</title>
+  <link rel="icon" type="image/x-icon" href="favicon-crop.png">
+  <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="nav" class="nav">
+        <div class="container1">
+            <div class="logo">
+                <a href="#home">
+                    <img src="cropsync.png" alt="CropSync" width="175px">
+                </a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div id="page-container">
+        <div id="content-wrap">
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px;">
+        <div id="weather_wrapper">
+            <div class="weatherCard">
+                <div class="currentTemp">
+                    <span class="temp">30&deg;</span>
+                    <span class="location">Delhi</span>
+                </div>
+                <div class="currentWeather">
+                    <span class="conditions">&#xf00d;</span>
+                    <div class="info">
+                        <span class="rain">2.5 MM</span>
+                        <span class="wind">6 KM/H</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <form>
+    <div class="parent-container">
+    <div class="dropdown">
+        <a>Enter Crop Details</a>
+      <label for="category">Select a category:</label>
+      <select id="category">
+        <option value="kharif">Kharif</option>
+        <option value="rabi">Rabi</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="crop">Select a crop:</label>
+      <select id="crop"></select>
+      <label for="startDate">Start Date:</label>
+    <div class="input-container">
+        <input type="date" id="startDate">
+        <button id="calculateButton">Calculate</button>
+    </div>
+    </div>
+    <button id="enterButton" type="button">Enter</button>    
+    <div id="result"></div>
+    <div class="resume" id="resume">
+        <div class="col-lg-6">
+        <h3 class="resume-title">Step-by-Step Process:</h3>
+        <div class="resume-item">
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+  
+
+  <section id="about" class="about">
+    
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Us </h2>
+          <!-- <img src="cropsync.png" alt="CropSync" width="125px"> -->
+          <p class="section-description">
+            CropSync is a cutting-edge technology company dedicated to revolutionizing the way farmers track and manage their crops. We understand the challenges faced by modern farmers and aim to provide them with innovative solutions to enhance their productivity and efficiency. form farming practices and cultivate a more sustainable future. Experience the power of CropSync and unlock the true potential of your crops.
+          </p>
+        </div>
+    </div>
+    
+    </section>
+    </div>
+
+  <section id="contact" class="contact">
+
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    
+        </ul>
+        <p>&copy;2023 CropSync | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </section>
+</div>
+  <script src="scripts.js"></script>
+</body>
+</html>
