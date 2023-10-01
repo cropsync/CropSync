@@ -103,6 +103,8 @@
   <section id="contact" class="contact">
 
     <footer class="footer">
+        <div id="google_translate_element"></div>
+
         <ul class="social-icon">
           <li class="social-icon__item"><a class="social-icon__link" href="#">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -129,6 +131,12 @@
       </footer>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
   </section>
 </div>
   <script src="scripts.js"></script>
