@@ -34,11 +34,12 @@ body {
     text-align: left;
     background-color: transparent;
     transition: background-color 0.7s ease; 
+    z-index: 10;
 }
 
 .nav-black {
     background-color: #000;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .nav div.logo {
