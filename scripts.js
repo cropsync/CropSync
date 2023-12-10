@@ -25,28 +25,117 @@ var selectedCrop = ("Wheat","Rice","Sweet Corn","Barley");
       if (selectedCategory === "kharif") {
         addCropOption("Rice");
         addCropOption("Sweet Corn");
+        addCropOption("Millet");
+        addCropOption("Sorghum");
+        addCropOption("Pearl Millet");
+        addCropOption("Sugarcane");
+        addCropOption("Cotton");
+        addCropOption("Groundnut");
+        addCropOption("Soybeans");
+        addCropOption("Turmeric");
+        addCropOption("Maize");
+        addCropOption("Sunflower");
+        addCropOption("Paddy");
+
       } else if (selectedCategory === "rabi") {
         addCropOption("Wheat");
         addCropOption("Barley");
+        addCropOption("Mustard");
+        addCropOption("Chickpeas");
+        addCropOption("Lentils");
+        addCropOption("Peas");
+        addCropOption("Rapeseed");
+        addCropOption("Fennel");
+
       }
     });
 
     enterButton.addEventListener("click", function() {
-        var selectedCategory = categoryDropdown.value;
-        var selectedCrop = cropDropdown.value;
-        var resumeItemElement = document.querySelector(".resume-item");
-
-        if (selectedCategory === "rabi" && selectedCrop === "Wheat") {
-            resumeItemElement.innerHTML = getRabiWheatSteps();
-        } else if (selectedCategory === "rabi" && selectedCrop === "Barley") {
-            resumeItemElement.innerHTML = getRabiBarleySteps();
-        }  else if (selectedCategory === "kharif" && (selectedCrop === "Rice")) {
-            resumeItemElement.innerHTML = getKharifRiceSteps();
-        }  else if (selectedCategory === "kharif" && (selectedCrop === "Sweet Corn")) {
-            resumeItemElement.innerHTML = getKharifCornSteps();
-        }
-          
-      });
+      var selectedCategory = categoryDropdown.value;
+      var selectedCrop = cropDropdown.value;
+      var resumeItemElement = document.querySelector(".resume-item");
+  
+      function displaySteps(stepsFunction) {
+          resumeItemElement.innerHTML = stepsFunction();
+      }
+  
+      if (selectedCategory === "rabi") {
+          switch (selectedCrop) {
+              case "Wheat":
+                  displaySteps(getRabiWheatSteps);
+                  break;
+              case "Barley":
+                  displaySteps(getRabiBarleySteps);
+                  break;
+              case "Mustard":
+                  displaySteps(getRabiMustardSteps);
+                  break;
+              case "Chickpeas":
+                  displaySteps(getRabiChickpeasSteps);
+                  break;
+              case "Lentils":
+                  displaySteps(getRabiLentilsSteps);
+                  break;
+              case "Rapeseed":
+                  displaySteps(getRabiRapeseedSteps);
+                  break;
+              case "Fennel":
+                  displaySteps(getRabiFennelSteps);
+                  break;
+              default:
+                  displaySteps(function() {
+                      return "No steps available for this crop.";
+                  });
+          }
+      } else if (selectedCategory === "kharif") {
+          switch (selectedCrop) {
+              case "Rice":
+                  displaySteps(getKharifRiceSteps);
+                  break;
+              case "Sweet Corn":
+                  displaySteps(getKharifCornSteps);
+                  break;
+              case "Millet":
+                  displaySteps(getKharifMilletSteps);
+                  break;
+              case "Sorghum":
+                  displaySteps(getKharifSorghumSteps);
+                  break;
+              case "Pearl Millet":
+                  displaySteps(getKharifPearlMilletSteps);
+                  break;
+              case "Sugarcane":
+                  displaySteps(getKharifSugarcaneSteps);
+                  break;
+              case "Cotton":
+                  displaySteps(getKharifCottonSteps);
+                  break;
+              case "Groundnut":
+                  displaySteps(getKharifGroundnutSteps);
+                  break;
+              case "Soybeans":
+                  displaySteps(getKharifSoybeansSteps);
+                  break;
+              case "Turmeric":
+                  displaySteps(getKharifTurmericSteps);
+                  break;
+              case "Maize":
+                  displaySteps(getKharifMaizeSteps);
+                  break;
+              case "Sunflower":
+                  displaySteps(getKharifSunflowerSteps);
+                  break;
+              case "Paddy":
+                  displaySteps(getKharifPaddySteps);
+                  break;
+              default:
+                  displaySteps(function() {
+                      return "No steps available for this crop.";
+                  });
+          }
+      }
+  });
+  
 
       enterButton.addEventListener("click", function() {
         var selectedCategory = categoryDropdown.value;
