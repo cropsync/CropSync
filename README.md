@@ -17,12 +17,7 @@ CropSync offers the following features:
 To run CropSync locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/CropSync.git`
-2. Install the required dependencies: `npm install`
-3. Set up the database connection by configuring the database credentials in `config.js`.
-4. Run the application: `npm start`
-5. Access the website in your browser at `http://localhost:3000`
-
-Note: Make sure you have Node.js and npm installed on your system.
+2. Open the index.html file in your Browser to view the Project.
 
 ## Technologies Used
 
