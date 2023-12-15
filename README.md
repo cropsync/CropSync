@@ -40,4 +40,4 @@ Please note that all contributions are subject to the project's code of conduct.
 
 ## License
 
-CropSync is released under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the code as per the terms of the license.
+CropSync is released under the [Uni License](https://github.com/cropsync/CropSync/main/LICENSE). You are free to use, modify, and distribute the code as per the terms of the license.
