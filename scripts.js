@@ -349,4 +349,33 @@ var selectedCrop = ("Wheat","Rice","Sweet Corn","Barley");
         }, 10000);
     }
   });
-  
+
+
+  // Replace 'API_KEY' with OpenWeatherMap API key
+const apiKey = 'API_KEY';
+const weatherWrapper = document.getElementById('weather_wrapper');
+
+function fetchWeather(location) {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const temperature = Math.round(data.main.temp - 273.15); // Convert temperature to Celsius
+            const rain = data.rain ? data.rain['1h'] : 0; // Rain in the last hour (if available)
+            const windSpeed = data.wind.speed;
+
+            // Update HTML with fetched data
+            weatherWrapper.querySelector('.temp').textContent = temperature + '°C';
+            weatherWrapper.querySelector('.location').textContent = data.name;
+            weatherWrapper.querySelector('.conditions').innerHTML = '&#xf00d;'; // You can use appropriate weather icons here
+            weatherWrapper.querySelector('.rain').textContent = `Rain: ${rain} mm`;
+            weatherWrapper.querySelector('.wind').textContent = `Wind: ${windSpeed} km/h`;
+        })
+        .catch(error => {
+            console.log('Error fetching weather:', error);
+        });
+}
+
+//  call fetchWeather with the user's location
+fetchWeather('Himalayas'); // Replace 'Himalayas' with the user's location or use geolocation to get it
