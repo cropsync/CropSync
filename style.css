@@ -15,7 +15,6 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: "Quicksand", sans-serif;
-	height: 100%;
 	background-color: #1a1a1a;
 	color: #ffffff;
 }
@@ -399,7 +398,10 @@ body {
 
 .parent-container {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
 }
 
 form {
@@ -477,52 +479,42 @@ form {
 }
 
 .dropdown {
-	text-align: left;
-	margin-bottom: 30px;
+	text-align: center;
+	margin-bottom: 50px;
 	font-size: 195%;
-	color: #00e676;
-	flex: 1;
-}
-
-.dropdown,
-.resume {
-	width: 50%;
+	color: #fff;
 }
 
 .dropdown a {
-	font-size: 30px;
-	margin-bottom: 50px;
+	font-size: 40px;
 	font-weight: 700;
-	margin-bottom: 30px;
 }
 
 label {
 	display: block;
 	margin-bottom: 5px;
-	text-align: left;
-	margin-right: 85px;
+	text-align: center;
+	font-size: 20px;
 }
 
 #enterButton {
-	display: block;
-	margin: 0;
-	margin-left: 90px;
-	background-color: #00e676;
-	color: white;
-	font-family: "Quicksand", sans-serif;
-	font-size: 18px;
+	margin-left: 70px;
+	background-color: #ffffff7a;
+	backdrop-filter: blur(10px);
 	padding: 5px 20px;
+	font-size: 18px;
 	border: none;
-	border-radius: 7px;
-	padding-right: 25px;
-	width: 100px;
-	height: 70px;
-	line-height: 40px;
+	outline: 0;
+	border-radius: 20px;
+	width: 130px;
+	height: 40px;
+	text-align: center;
 }
-
 #enterButton:hover {
-	background-color: #fff;
-	color: #00e676;
+	background-color: #0000007e;
+	backdrop-filter: blur(10px);
+	transition: 0.5s ease;
+	color: white;
 	cursor: pointer;
 }
 
@@ -563,12 +555,6 @@ h1 {
 	font-weight: bold;
 	text-align: left;
 	font-size: 20px;
-}
-
-.title,
-.dropdown,
-#result {
-	margin-left: 35px;
 }
 
 .message {
@@ -687,20 +673,19 @@ h1 {
 	top: 5px;
 }
 select {
-	width: 200px;
+	width: 300px;
+	height: 35px;
+	font-size: 20px;
+	border: none;
+	border-radius: 20px;
+	outline: 0;
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: 700;
 }
 
 section {
 	padding: 60px 0;
-}
-
-.crop-details,
-.category,
-.crop,
-.start-date,
-#enterButton {
-	flex: 1;
-	text-align: center;
 }
 
 .section-title {
