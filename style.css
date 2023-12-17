@@ -23,8 +23,9 @@ body {
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
 /* Navbar section */
-#page-container {
-	overflow-x: hidden;
+
+#wrap {
+	margin-top: -150px;
 }
 .nav {
 	width: 100%;
@@ -408,25 +409,20 @@ form {
 	flex: 1;
 }
 
-.resume {
-	margin-left: auto;
-}
-
 .resume .resume-title {
 	font-size: 28px;
 	font-weight: 700;
 	margin-top: 10px;
 	margin-bottom: 20px;
-	margin-right: 50px;
 	color: #00e676;
 }
 
 .resume .resume-item {
 	padding: 0 0 20px 20px;
-	margin-top: -10px;
 	border-left: 2px solid #00e676;
 	position: relative;
 	margin-right: 50px;
+	font-size: 25px;
 }
 
 .resume .resume-item h4 {
@@ -479,26 +475,25 @@ form {
 }
 
 .dropdown {
+	width: 500px;
 	text-align: center;
-	margin-bottom: 50px;
-	font-size: 195%;
+	margin-bottom: 20px;
 	color: #fff;
 }
 
 .dropdown a {
-	font-size: 40px;
+	font-size: 55px;
 	font-weight: 700;
 }
 
 label {
 	display: block;
-	margin-bottom: 5px;
+	margin: 10px 0;
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 #enterButton {
-	margin-left: 70px;
 	background-color: #ffffff7a;
 	backdrop-filter: blur(10px);
 	padding: 5px 20px;
@@ -525,8 +520,15 @@ h1 {
 }
 
 #startDate {
-	font-size: 16px;
+	width: 160px;
+	font-size: 18px;
+	font-weight: 500;
 	margin-top: 5px;
+	padding: 7px;
+	border-radius: 20px;
+	outline: 0;
+	background-color: rgba(255, 255, 255, 0.692);
+	backdrop-filter: blur(10px);
 }
 
 .input-container {
@@ -536,18 +538,23 @@ h1 {
 	margin-right: 25px;
 }
 
-.calculatorButton {
-	align-items: left;
-	display: block;
-	margin: 0 auto;
-	background-color: #00e676;
+#calculateButton {
+	padding: 7px;
+	border-radius: 20px;
+	width: 120px;
+	height: 39px;
+	font-size: 18px;
+	border: 1px solid rgb(79, 86, 33);
+	background-color: #abed1000;
+	backdrop-filter: blur(10px);
 	color: white;
-	font-family: "Quicksand", sans-serif;
-	font-size: 14px;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	margin-right: 25px;
+}
+#calculateButton:hover {
+	background-color: #0000007e;
+	backdrop-filter: blur(10px);
+	transition: 0.5s ease;
+	color: white;
+	cursor: pointer;
 }
 
 #result {
@@ -682,6 +689,8 @@ select {
 	text-align: center;
 	font-family: "Courier New", Courier, monospace;
 	font-weight: 700;
+	background: rgba(255, 255, 255, 0.479);
+	backdrop-filter: blur(10px);
 }
 
 section {
