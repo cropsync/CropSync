@@ -602,15 +602,18 @@ h1 {
 .currentTemp {
 	width: 220px;
 	height: 200px;
-	background: rgb(41, 41, 41);
-	position: absolute;
-	top: 0;
-	left: 0;
+	background: rgba(255, 252, 252, 0.207);
+	backdrop-filter: blur(5px);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 .currentWeather {
 	width: 180px;
 	height: 200px;
-	background: #00e676;
+	background: rgba(32, 32, 32, 0.368);
+	backdrop-filter: blur(5px);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 	margin: 0;
 	position: absolute;
 	top: 0;
@@ -625,7 +628,7 @@ h1 {
 	padding: 20px 0 0;
 }
 .location {
-	color: #00e676;
+	color: #282828;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -649,6 +652,7 @@ h1 {
 	font-weight: 700;
 	color: #000;
 	text-align: center;
+	border-bottom-right-radius: 20px;
 }
 .rain {
 	width: 50%;
