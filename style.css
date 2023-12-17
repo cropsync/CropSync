@@ -31,16 +31,8 @@ body {
 	width: 100%;
 	height: 70px;
 	line-height: 50px;
-	/* transition: background-color 0.7s ease; */
 	z-index: 1;
 }
-/* Revoming the nav-black class */
-/* 
-.nav-black {
-	background-color: #00000061;
-	backdrop-filter: blur(50px);
-	opacity: 0.8;
-} */
 
 .nav div.logo {
 	padding-top: 12px;
