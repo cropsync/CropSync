@@ -920,4 +920,118 @@ form {
 }
 
 
+/**********************CONTACT CSS **********************/
+
+.container1 {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 20px;
+
+}
+
+.main_list li {
+  margin-right: 20px;
+}
+
+ .contact { 
+  padding: 40px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 4em;
+  color: #ddd9d9;
+}
+
+.section-description {
+  font-size: 1.6em;
+  color: #a19f9f;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #8a8888;
+}
+
+input, textarea {
+  width: 55%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #424040;
+  border-radius: 4px;
+  background-color: rgba(245, 235, 235, 0.852); 
+  color: #070000;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+}
+
+button {
+  background-color: #5a1b1b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #960909;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  width: 55%;
+  margin: 10px;
+}
+
+input::placeholder{
+  color: #8b8888;
+  font-weight: bolder;
+}
+
+textarea::placeholder{
+  color: #929090;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    width: 100;
+    flex-direction: column;
+  }
+
+  .main_list ul {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  form {
+    width: 100%;
+  }
+  
+  label {
+    width: 60%;
+  }
+}
+
+/*****************   CONTACT  **********************/
+
+
   

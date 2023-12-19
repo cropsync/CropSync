@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="nav" class="nav">
+    <div class="container1">
+        <div class="logo">
+            <a href="#home">
+                <img src="cropsync.png" alt="CropSync" width="175px">
+            </a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">Weather</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+  <div id="page-container">
+    <div id="content-wrap">
+
+      <section id="contact" class="contact">
+        <div class="container1" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact Us</h2>
+            <p class="section-description">
+              Please fill out the form below to get in touch with us.
+            </p>
+
+            <form id="contactform" action="process-contact.php" method="post">
+              <!-- <label for="name">Name:</label> -->
+              <input type="text" id="name" name="name" required placeholder="Name">
+
+              <!-- <label for="email">Email:</label> -->
+              <input type="email" id="email" name="email" required placeholder="@gmail.com">
+
+              <!-- <label for="message">Message:</label> -->
+              <textarea id="message" name="message" rows="4" required placeholder="Type Your Message here ..."></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>
