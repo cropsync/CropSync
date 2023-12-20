@@ -961,11 +961,11 @@ form {
   align-items: center;
 }
 
-label {
+/* label {
   margin-bottom: 10px;
   font-size: 1.5em;
   color: #8a8888;
-}
+} */
 
 input, textarea {
   width: 55%;
@@ -980,7 +980,7 @@ input, textarea {
 }
 
 button {
-  background-color: #5a1b1b;
+  background-color: #00E676;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -990,7 +990,7 @@ button {
 }
 
 button:hover {
-  background-color: #960909;
+  background-color: #04753e;
 }
 
 form {
