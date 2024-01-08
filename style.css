@@ -17,6 +17,7 @@ body {
     font-size: 62.5%;
     font-size: 10px;
     height: 100%;
+    overflow-x: hidden;
     background-color: #1a1a1a;
     color: #ffffff;
 }
