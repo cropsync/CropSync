@@ -817,6 +817,7 @@ form {
 
   .nav-scroller {
     position: relative;
+    padding: 10px 20px;
     z-index: 2;
     height: 2.75rem;
     overflow-y: hidden;
@@ -825,10 +826,11 @@ form {
   .nav-scroller .nav {
     display: flex;
     flex-wrap: nowrap;
-    padding-bottom: 1rem;
+    padding:10px 20px;
     margin-top: -1px;
     overflow-x: auto;
     text-align: center;
+    text decoration:none;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
